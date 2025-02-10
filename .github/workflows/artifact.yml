@@ -29,3 +29,6 @@ jobs:
       uses: actions/download-artifact@v4.1.8
       with:
             name: hello-artifact
+            
+    - name: display the hello world file content
+      run: cat ./artifacts/hello.txt
